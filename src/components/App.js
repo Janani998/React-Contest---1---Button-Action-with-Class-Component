@@ -8,6 +8,7 @@ class App extends Component {
     this.state = {
       show: false
     };
+    this.handleClick = this.handleClick.bind(this);
   }
   handleClick = () => {
     this.setState({ show: !this.state.show });
