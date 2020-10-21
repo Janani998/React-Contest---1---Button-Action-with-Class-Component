@@ -9,9 +9,9 @@ class App extends Component {
       show: false
     };
   }
-  handleClick() {
-    this.setState({ show: true });
-  }
+  handleClick = () => {
+    this.setState({ show: !this.state.show });
+  };
   render() {
     return (
       <div id="main">
